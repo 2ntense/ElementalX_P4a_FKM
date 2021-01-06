@@ -5,7 +5,7 @@ url_latest_version_no = "https://exkernelmanager.com/kernels/sunfish/11/AOSP/lat
 latest_version_no = requests.get(url_latest_version_no).text.strip()
 kernel_file = "-".join(latest_version_no.split("-")[1:])
 
-output_json = {"kernel": {}, "support": {"link": "https://github.com/2ntense"}}
+output_json = {"kernel": {}, "support": {"link": "https://github.com/2ntense/ElementalX_P4a_FKM"}}
 output_json["kernel"]["name"] = "ElementalX for Pixel 4a (sunfish)"
 output_json["kernel"]["version"] = latest_version_no
 output_json["kernel"]["link"] = f"https://exkernelmanager.com/kernels/sunfish/11/AOSP/{kernel_file}.zip"
